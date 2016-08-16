@@ -1,10 +1,10 @@
 // Copyright 2016 Gerardo Teruel
 #include <string>
-#include "ComputerFactory.h"
-#include "Desktop.h"
-#include "Tablet.h"
-#include "Laptop.h"
-#include "Netbook.h"
+#include "ComputerFactory.hpp"
+#include "Desktop.hpp"
+#include "Tablet.hpp"
+#include "Laptop.hpp"
+#include "Netbook.hpp"
 
 AbstractComputer * ComputerFactory::create(std::string type) {
   if (type == "desktop") {

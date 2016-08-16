@@ -1,6 +1,7 @@
 // Copyright 2016 Gerardo Teruel
-#include "Netbook.h"
+
 #include <string>
+#include "Netbook.hpp"
 
 std::string Netbook::describe() {
   return "netbook";

@@ -3,7 +3,7 @@
 #define SRC_TAREA02_ABSTRACTCOMPUTERFACTORY_H_
 
 #include <string>
-#include "AbstractComputer.h"
+#include "AbstractComputer.hpp"
 
 class AbstractComputerFactory {
  public:

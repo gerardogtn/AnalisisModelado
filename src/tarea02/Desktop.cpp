@@ -1,5 +1,5 @@
 // Copyright 2016 Gerardo Teruel
-#include "Desktop.h"
+#include "Desktop.hpp"
 #include <string>
 
 std::string Desktop::describe() {
