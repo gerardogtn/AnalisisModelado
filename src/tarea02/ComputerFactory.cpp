@@ -6,17 +6,17 @@
 #include "Laptop.hpp"
 #include "Netbook.hpp"
 
-AbstractComputer * ComputerFactory::create(std::string type) {
-  if (type == "desktop") {
+AbstractComputer * ComputerFactory::create(ComputerType type) {
+  if (type == ComputerType::DESKTOP) {
     return Desktop::create();
-  } else if (type == "laptop") {
+  } else if (type == ComputerType::LAPTOP) {
     return Laptop::create();
-  } else if (type == "tablet") {
+  } else if (type == ComputerType::TABLET) {
     return Tablet::create();
-  } else if (type == "netbook") {
+  } else if (type == ComputerType::NETBOOK) {
     return Netbook::create();
   }
-  throw std::runtime_error("Invalid computer type");
+  throw std::runtime_error("There's a type of computer that isn't implemented in the factory");
 }
 
 ComputerFactory* ComputerFactory::instance = nullptr;

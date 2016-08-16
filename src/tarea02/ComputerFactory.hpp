@@ -11,7 +11,7 @@ class ComputerFactory : public AbstractComputerFactory {
   ComputerFactory() {}
 
  public:
-  AbstractComputer * create(std::string);
+  AbstractComputer * create(ComputerType type);
   static ComputerFactory* getInstance();
 };
 

@@ -4,10 +4,11 @@
 
 #include <string>
 #include "AbstractComputer.hpp"
+#include "ComputerType.hpp"
 
 class AbstractComputerFactory {
  public:
-  virtual AbstractComputer* create(std::string type) = 0;
+  virtual AbstractComputer* create(ComputerType type) = 0;
 };
 
 #endif  // SRC_TAREA02_ABSTRACTCOMPUTERFACTORY_H_
