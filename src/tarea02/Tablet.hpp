@@ -4,7 +4,10 @@
 #include <string>
 #include "AbstractComputer.hpp"
 class Tablet : public AbstractComputer {
+ private:
+  Tablet() {}
  public:
   std::string describe();
+  static Tablet* create();
 };
 #endif  // SRC_TAREA02_TABLET_H_

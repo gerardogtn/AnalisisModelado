@@ -6,7 +6,10 @@
 #include "AbstractComputer.hpp"
 
 class Laptop : public AbstractComputer {
+ private:
+  Laptop() {}
  public:
   std::string describe();
+  static Laptop* create();
 };
 #endif  // SRC_TAREA02_LAPTOP_H_

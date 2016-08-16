@@ -6,7 +6,10 @@
 #include "AbstractComputer.hpp"
 
 class Desktop : public AbstractComputer {
+ private:
+  Desktop() {}
  public:
   std::string describe();
+  static Desktop * create();
 };
 #endif  // SRC_TAREA02_DESKTOP_H_

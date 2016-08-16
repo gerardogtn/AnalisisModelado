@@ -8,13 +8,13 @@
 
 AbstractComputer * ComputerFactory::create(std::string type) {
   if (type == "desktop") {
-    return new Desktop();
+    return Desktop::create();
   } else if (type == "laptop") {
-    return new Laptop();
+    return Laptop::create();
   } else if (type == "tablet") {
-    return new Tablet();
+    return Tablet::create();
   } else if (type == "netbook") {
-    return new Netbook();
+    return Netbook::create();
   }
   throw std::runtime_error("Invalid computer type");
 }
