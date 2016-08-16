@@ -1,10 +1,10 @@
 // Copyright 2016 Gerardo Teruel
 #include <iostream>
-#include "ComputerFactory.h"
-#include "Laptop.h"
-#include "Netbook.h"
-#include "Tablet.h"
-#include "Desktop.h"
+#include "ComputerFactory.hpp"
+#include "Laptop.hpp"
+#include "Netbook.hpp"
+#include "Tablet.hpp"
+#include "Desktop.hpp"
 
 int main(int argc, char const *argv[]) {
   ComputerFactory* factory = ComputerFactory::getInstance();
