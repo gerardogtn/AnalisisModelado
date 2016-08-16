@@ -11,6 +11,9 @@ int main(int argc, char const *argv[]) {
   Desktop * d = (Desktop *) ComputerFactory::create("desktop");
   Netbook * n = (Netbook *) ComputerFactory::create("netbook");
   Tablet * t = (Tablet *) ComputerFactory::create("tablet");
-  std::cout << "works :D\n";
+  std::cout << l->describe() << std::endl;
+  std::cout << d->describe() << std::endl;
+  std::cout << n->describe() << std::endl;
+  std::cout << t->describe() << std::endl;
   return 0;
 }
