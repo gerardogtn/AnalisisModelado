@@ -29,8 +29,8 @@ class Sucursal {
     return new PastelIterator(pasteles);
   }
 
-  void addPastel(Pastel* pastel) {
-    pasteles.push_back(pastel);
+  void addPastel(const std::string& name) {
+    pasteles.push_back(pastelFactory->make(name));
   }
 
   void printPasteles() {
